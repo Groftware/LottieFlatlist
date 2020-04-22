@@ -8,7 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@groftware/lottie-pull-to-refresh": "/Users/chanjinghong/Development/lottie-pull-to-refresh/groftware-lottie-pull-to-refresh-v1.0.0.tgz",
+    "@groftware/lottie-flatlist": "^1.0.0",
     "expo": "~37.0.3",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",

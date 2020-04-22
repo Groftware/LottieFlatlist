@@ -5,7 +5,7 @@ import {
   SafeAreaView,
   Text
 } from 'react-native';
-import PullToRefreshFlatlist from '@groftware/lottie-pull-to-refresh'
+import LottieFlatlist from '@groftware/lottie-flatlist'
 
 const styles = StyleSheet.create({
   container: {
@@ -66,7 +66,7 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <PullToRefreshFlatlist
+      <LottieFlatlist
         data={fruits}
         renderItem={renderItem}
         animationSource={animationSource}
