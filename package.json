@@ -1,0 +1,49 @@
+{
+  "name": "@groftware/lottie-pull-to-refresh-flatlist",
+  "version": "1.0.0",
+  "description": "A Flatlist component that supports using custom lottie animations for pull to refresh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colbymillerdev/react-native-progress-steps.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "stepper",
+    "progress",
+    "progress-steps"
+  ],
+  "author": "Chan Jing Hong",
+  "license": "MIT",
+  "dependencies": {
+    "expo": "~37.0.3",
+    "expo-haptics": "~8.1.0",
+    "lottie-react-native": "^3.3.2",
+    "prop-types": "^15.7.2",
+    "react": "~16.9.0",
+    "react-dom": "~16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.59.0",
+    "@babel/core": "^7.8.6",
+    "babel-preset-expo": "~8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1"
+  }
+}
