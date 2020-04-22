@@ -22,6 +22,7 @@ const RefreshHeader = ({
   animationSource,
   animationSize,
   progress,
+  height,
   shouldAnimate,
 }) => {
   const lottieAnimation = useRef(null);
@@ -33,7 +34,12 @@ const RefreshHeader = ({
   }, [shouldAnimate]);
 
   return (
-    <View style={styles.container}>
+    <View style={[
+      styles.container,
+      {
+        height
+      }
+    ]}>
       <LottieView
         ref={lottieAnimation}
         style={[
@@ -50,10 +56,11 @@ const RefreshHeader = ({
   );
 };
 RefreshHeader.propTypes = {
-  animationSource: PropTypes.string.isRequired,
+  animationSource: PropTypes.object.isRequired,
   // Number from 0 to 1
   progress: PropTypes.number.isRequired,
   shouldAnimate: PropTypes.bool.isRequired,
+  height: PropTypes.number.isRequired,
 
   animationSize: PropTypes.number,
 };

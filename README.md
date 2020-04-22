@@ -1,3 +1,6 @@
+# LottieFlatlist
+![image](https://i.imgur.com/CZTyXRS.gif)
+
 **Table of contents** 
 
 * [Insallation](#installation)

@@ -107,6 +107,7 @@ function PullToRefreshFlatlist({
           animationSize={animationSize}
           progress={progress}
           shouldAnimate={refreshing}
+          height={refreshHeight}
         />
       </View>
       <Animated.View
@@ -127,13 +128,13 @@ function PullToRefreshFlatlist({
 }
 
 PullToRefreshFlatlist.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+  data: PropTypes.arrayOf(PropTypes.any).isRequired,
   renderItem: PropTypes.func.isRequired,
 
   // Refresh
   refreshing: PropTypes.bool.isRequired,
   onRefresh: PropTypes.func.isRequired,
-  animationSource: PropTypes.string.isRequired,
+  animationSource: PropTypes.object.isRequired,
   animationSize: PropTypes.number,
   refreshHeight: PropTypes.number,
 };
