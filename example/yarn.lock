@@ -942,10 +942,10 @@
     pouchdb-collections "^1.0.1"
     tiny-queue "^0.2.1"
 
-"@groftware/lottie-flatlist@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@groftware/lottie-flatlist/-/lottie-flatlist-1.0.3.tgz#1745f3db2a29cca54d5bcf3405e9891a472b2d06"
-  integrity sha512-wE8KlyqxVxszCZEi6fCovL3L0YfGHp6JuIQfwpe9sRLdFXnDqOFi/ZKihgAxcxpz9UYENXNayAG/vKtJEC9A9A==
+"@groftware/lottie-flatlist@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@groftware/lottie-flatlist/-/lottie-flatlist-1.0.4.tgz#ee78688e4fc8a4da94b00444506af3ce8dcbde55"
+  integrity sha512-CMrEMOYhOuPbG0Ub4Qv2ptlCJihJdSx53XA/iVlJsvgX9rDnyWVVlRWxNkuHeMoBNbJpGKepf6zbj1qGY7s80Q==
   dependencies:
     expo "~37.0.3"
     expo-haptics "~8.1.0"
@@ -3284,9 +3284,9 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4
     js-tokens "^3.0.0 || ^4.0.0"
 
 lottie-ios@^3.1.3:
-  version "3.1.6"
-  resolved "https://registry.yarnpkg.com/lottie-ios/-/lottie-ios-3.1.6.tgz#e70481f161666caf9f7ed9dba5ac715bc7ad8908"
-  integrity sha512-pnwkPpM3e6CiHY/Mc1eXlDEfvv/CW9jx/TNsX/JWABVF0RiyEidQd8uXBiu5GUxY813pZJN53+k+/cOiAufE5A==
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/lottie-ios/-/lottie-ios-3.1.8.tgz#2e9b1f4eae0dfc10bf4c0b3ab6b402c1d590d0fa"
+  integrity sha512-9bgiVn1n+zqWjDPTk4MVWXA+DgVa91payxV2jz8B2dsDFqWtjEqTZaaVo5IqNUExsaC5XkRbziExtTOtzd39tQ==
 
 lottie-react-native@^3.3.2:
   version "3.3.2"

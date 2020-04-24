@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   View,
   FlatList,
@@ -23,27 +23,29 @@ const styles = StyleSheet.create({
 function PullToRefreshFlatlist({
   data,
   renderItem,
+  ListHeaderComponent,
 
   // Refresh props
   refreshing,
   onRefresh,
   refreshHeight,
   animationSource,
-  animationSize,
+  animationSize
 }) {
   const [progress, setProgress] = useState(0);
   const [yOffset, setYOffset] = useState(0);
-  const [shouldImpact, setShouldImpact] = useState(true);
   const [animPaddingTop] = useState(new Animated.Value(0));
+
+  const flatlistRef = useRef(null);
 
   // Run animate show header
   const showLoadingAnimation = (
     endCallback = () => { },
   ) => {
+    flatlistRef.current.scrollToOffset(0);
     Animated.timing(animPaddingTop, {
       toValue: refreshHeight,
-      // Immediately appears
-      duration: 0,
+      duration: 200,
       easing: Easing.out(Easing.ease),
     }).start(endCallback);
   };
@@ -81,13 +83,8 @@ function PullToRefreshFlatlist({
     if (
       y <= -refreshHeight
       && y >= -(refreshHeight + 10)
-      && shouldImpact
     ) {
-      setShouldImpact(false);
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium)
-        .then(() => {
-          setShouldImpact(true);
-        });
     }
 
     setYOffset(y);
@@ -110,19 +107,22 @@ function PullToRefreshFlatlist({
           height={refreshHeight}
         />
       </View>
-      <Animated.View
-        style={{
-          paddingTop: animPaddingTop,
-        }}
-      >
-        <FlatList
-          data={data}
-          renderItem={renderItem}
-          onScroll={onScroll}
-          onResponderRelease={onRelease}
-          scrollEventThrottle={1}
-        />
-      </Animated.View>
+      <FlatList
+        ref={flatlistRef}
+        data={data}
+        ListHeaderComponent={
+          <Animated.View
+            style={{
+              paddingTop: animPaddingTop,
+            }}
+          >
+            {ListHeaderComponent}
+          </Animated.View>
+        }
+        renderItem={renderItem}
+        onScroll={onScroll}
+        onResponderRelease={onRelease}
+      />
     </View>
   );
 }
@@ -130,6 +130,7 @@ function PullToRefreshFlatlist({
 PullToRefreshFlatlist.propTypes = {
   data: PropTypes.arrayOf(PropTypes.any).isRequired,
   renderItem: PropTypes.func.isRequired,
+  ListHeaderComponent: PropTypes.any,
 
   // Refresh
   refreshing: PropTypes.bool.isRequired,
