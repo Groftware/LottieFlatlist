@@ -105,6 +105,12 @@ export default function MyApp() {
 		<td>Yes</td>
 	</tr>
 	<tr>
+		<td>ListHeaderComponent</td>
+		<td>component</td>
+		<td>Same as FlatList ListHeaderComponent</td>
+		<td>No</td>
+	</tr>
+	<tr>
 		<td>animationSource</td>
 		<td>object</td>
 		<td>Animation asset lottie json</td>
