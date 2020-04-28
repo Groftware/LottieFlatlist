@@ -1,3 +1,5 @@
+> To those interested in learning how this component is built, you can check out [this article](https://medium.com/groftware/react-native-how-to-create-custom-pull-to-refresh-animations-aa0d14329dc0) on Medium. We write articles explaining how our components are built on our [Medium page](https://medium.com/groftware). If you're interested in that, feel free to follow us.
+
 # LottieFlatlist
 ![image](https://i.imgur.com/CZTyXRS.gif)
 

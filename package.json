@@ -1,6 +1,6 @@
 {
   "name": "@groftware/lottie-flatlist",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A Flatlist component that supports using custom lottie animations for pull to refresh",
   "main": "index.js",
   "scripts": {
