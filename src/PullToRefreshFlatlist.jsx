@@ -32,7 +32,6 @@ function PullToRefreshFlatlist({
   animationSource,
   animationSize
 }) {
-  const [progress, setProgress] = useState(0);
   const [yOffset, setYOffset] = useState(0);
   const [animPaddingTop] = useState(new Animated.Value(0));
 
@@ -75,11 +74,6 @@ function PullToRefreshFlatlist({
     const { contentOffset } = nativeEvent;
     const { y } = contentOffset;
 
-    if (y < 0 && !refreshing) {
-      const percent = y / -refreshHeight;
-      setProgress(percent);
-    }
-
     if (
       y <= -refreshHeight
       && y >= -(refreshHeight + 10)
@@ -94,6 +88,11 @@ function PullToRefreshFlatlist({
     if (yOffset <= -refreshHeight && !refreshing) {
       onRefresh();
     }
+  }
+
+  let progress = 0
+  if (yOffset < 0 && !refreshing) {
+    progress = yOffset / -refreshHeight
   }
 
   return (
