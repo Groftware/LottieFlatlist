@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 74278,
-  "expoServerNgrokUrl": "https://7p-edj.cjinghong.example.exp.direct",
-  "packagerNgrokUrl": "https://packager.7p-edj.cjinghong.example.exp.direct",
-  "ngrokPid": 74289,
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null
 }

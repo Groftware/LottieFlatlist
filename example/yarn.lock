@@ -942,10 +942,10 @@
     pouchdb-collections "^1.0.1"
     tiny-queue "^0.2.1"
 
-"@groftware/lottie-flatlist@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@groftware/lottie-flatlist/-/lottie-flatlist-1.0.4.tgz#ee78688e4fc8a4da94b00444506af3ce8dcbde55"
-  integrity sha512-CMrEMOYhOuPbG0Ub4Qv2ptlCJihJdSx53XA/iVlJsvgX9rDnyWVVlRWxNkuHeMoBNbJpGKepf6zbj1qGY7s80Q==
+"@groftware/lottie-flatlist@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@groftware/lottie-flatlist/-/lottie-flatlist-1.0.5.tgz#4540f4fbbd8a10b5dc880c9e3f8e2630d3ae8388"
+  integrity sha512-pcDf9652EGdUsxyH2KWxaZQsnb4O2/y+g+sueJO/+QNxVSNSE5eEfVmhx8l3o0ppSBtc6t5PUJMk+OVqrs9b5Q==
   dependencies:
     expo "~37.0.3"
     expo-haptics "~8.1.0"
